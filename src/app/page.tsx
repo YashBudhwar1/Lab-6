@@ -22,6 +22,7 @@ export default async function Home() {
           </p>
 
           <div className="flex gap-4">
+            
           
             {userId ? (
               <>
@@ -34,6 +35,12 @@ export default async function Home() {
                 <Link href="/sign-up">
                  <Button className="md:text-base font-light">New Patient</Button>
                 </Link>
+           
+                <Link href="/users">
+                <Button>Manage Users</Button>
+                </Link>
+
+
 
                 <Link href="/sign-in">
                  <Button variant="outline" className="md:text-base underline hover:text-blue-600 ">
@@ -42,6 +49,8 @@ export default async function Home() {
               </>
             )}
           </div>
+
+
          </div>
       </div>
       <footer className="mt-8">
